@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-5SJWRQ7N');</script>
-        <!-- End Google Tag Manager -->
-        <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VSGVTDRZ3"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VSGVTDRZ3"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -106,12 +103,9 @@
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
-                <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SJWRQ7N"
+         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SJWRQ7N"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-
-    <header class="bg-white shadow-md sticky top-0 z-50">
+        <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <a href="#" class="text-3xl font-extrabold tracking-tight text-gray-900">
@@ -195,60 +189,68 @@
                         <p class="text-gray-600 mb-1 text-sm">Men's Running Shoes</p>
                         <p class="text-2xl font-bold text-indigo-600 mb-4">$129.99</p>
                         <button class="pay-now w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-lg transition duration-300 flex items-center justify-center space-x-2"
-                            onclick="window.location.href='payment-successful.html'">
+                            data-item-name="Men's Sneakers"
+                            data-item-category="Men's Running Shoes"
+                            data-price="129.99">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
                             <span>Pay Now</span>
                         </button>
                     </div>
                 </div>
                 <div class="product-card bg-gray-50 rounded-xl shadow-lg overflow-hidden group transform hover:shadow-2xl transition-shadow duration-300">
-    <div class="relative">
-        <img src="elegant Heels.jfif" alt="Chic Stiletto" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/400x300/D1FAE5/10B981?text=Image+Not+Found';">
-        <div class="absolute top-3 right-3 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">NEW</div>
-    </div>
-    <div class="p-6">
-        <h3 class="text-xl font-semibold mb-2 text-gray-800">High Heels</h3>
-        <p class="text-gray-600 mb-1 text-sm">Women's High Heels</p>
-        <p class="text-2xl font-bold text-indigo-600 mb-4">$149.00</p>
-        <button class="pay-now w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-lg transition duration-300 flex items-center justify-center space-x-2"
-            onclick="window.location.href='payment-successful.html'">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-            <span>Pay Now</span>
-        </button>
-    </div>
-</div>
+                    <div class="relative">
+                        <img src="elegant Heels.jfif" alt="Chic Stiletto" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/400x300/D1FAE5/10B981?text=Image+Not+Found';">
+                        <div class="absolute top-3 right-3 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">NEW</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">High Heels</h3>
+                        <p class="text-gray-600 mb-1 text-sm">Women's High Heels</p>
+                        <p class="text-2xl font-bold text-indigo-600 mb-4">$149.00</p>
+                        <button class="pay-now w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-lg transition duration-300 flex items-center justify-center space-x-2"
+                            data-item-name="High Heels"
+                            data-item-category="Women's High Heels"
+                            data-price="149.00">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                            <span>Pay Now</span>
+                        </button>
+                    </div>
+                </div>
                 <div class="product-card bg-gray-50 rounded-xl shadow-lg overflow-hidden group transform hover:shadow-2xl transition-shadow duration-300">
-    <div class="relative">
-        <img src="kidss.jpg" alt="Playful Kicks" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/400x300/FEF3C7/F59E0B?text=Image+Not+Found';">
-        <div class="absolute top-3 right-3 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">NEW</div>
-    </div>
-    <div class="p-6">
-        <h3 class="text-xl font-semibold mb-2 text-gray-800">Kid's Sneakers</h3>
-        <p class="text-gray-600 mb-1 text-sm">Kids' Sneakers</p>
-        <p class="text-2xl font-bold text-indigo-600 mb-4">$79.50</p>
-        <button class="pay-now w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-lg transition duration-300 flex items-center justify-center space-x-2"
-            onclick="window.location.href='payment-successful.html'">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-            <span>Pay Now</span>
-        </button>
-    </div>
-</div>
+                    <div class="relative">
+                        <img src="kidss.jpg" alt="Playful Kicks" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/400x300/FEF3C7/F59E0B?text=Image+Not+Found';">
+                        <div class="absolute top-3 right-3 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">NEW</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Kid's Sneakers</h3>
+                        <p class="text-gray-600 mb-1 text-sm">Kids' Sneakers</p>
+                        <p class="text-2xl font-bold text-indigo-600 mb-4">$79.50</p>
+                        <button class="pay-now w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-lg transition duration-300 flex items-center justify-center space-x-2"
+                            data-item-name="Kid's Sneakers"
+                            data-item-category="Kids' Sneakers"
+                            data-price="79.50">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                            <span>Pay Now</span>
+                        </button>
+                    </div>
+                </div>
                 <div class="product-card bg-gray-50 rounded-xl shadow-lg overflow-hidden group transform hover:shadow-2xl transition-shadow duration-300">
-    <div class="relative">
-        <img src="loafers.jfif" alt="Loafer" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/400x300/DBEAFE/3B82F6?text=Image+Not+Found';">
-        <div class="absolute top-3 right-3 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">NEW</div>
-    </div>
-    <div class="p-6">
-        <h3 class="text-xl font-semibold mb-2 text-gray-800">Men's Loafer</h3>
-        <p class="text-gray-600 mb-1 text-sm">Unisex Casual Wear</p>
-        <p class="text-2xl font-bold text-indigo-600 mb-4">$99.00</p>
-        <button class="pay-now w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-lg transition duration-300 flex items-center justify-center space-x-2"
-            onclick="window.location.href='payment-successful.html'">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-            <span>Pay Now</span>
-        </button>
-    </div>
-</div>
+                    <div class="relative">
+                        <img src="loafers.jfif" alt="Loafer" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/400x300/DBEAFE/3B82F6?text=Image+Not+Found';">
+                        <div class="absolute top-3 right-3 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">NEW</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Men's Loafer</h3>
+                        <p class="text-gray-600 mb-1 text-sm">Unisex Casual Wear</p>
+                        <p class="text-2xl font-bold text-indigo-600 mb-4">$99.00</p>
+                        <button class="pay-now w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-lg transition duration-300 flex items-center justify-center space-x-2"
+                            data-item-name="Men's Loafer"
+                            data-item-category="Unisex Casual Wear"
+                            data-price="99.00">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                            <span>Pay Now</span>
+                        </button>
+                    </div>
+                </div>
             </div>
             </div>
     </section>
@@ -328,22 +330,47 @@
             });
         });
 
-        // Add to Cart Confirmation Message
-        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+        // Add to Cart Confirmation Message (now integrated with Pay Now buttons)
+        const payNowButtons = document.querySelectorAll('.pay-now');
         const confirmationMessage = document.getElementById('add-to-cart-confirmation');
         let hideTimeout; // To store the timeout ID
 
-        addToCartButtons.forEach(button => {
-            button.addEventListener('click', () => {
+        payNowButtons.forEach(button => {
+            button.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent immediate redirect
+
+                const itemName = this.dataset.itemName;
+                const itemCategory = this.dataset.itemCategory;
+                const price = parseFloat(this.dataset.price); // Convert to number
+
                 // Clear any existing timeout to prevent flickering if clicked rapidly
                 clearTimeout(hideTimeout);
 
                 confirmationMessage.classList.add('show');
 
-                // Hide the message after 6 seconds
+                // Hide the message after 3 seconds
                 hideTimeout = setTimeout(() => {
                     confirmationMessage.classList.remove('show');
-                }, 6000); // 6000 milliseconds = 6 seconds
+                }, 3000); // 3000 milliseconds = 3 seconds
+
+                // Push data to dataLayer
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    event: 'product_checkout_start', // Custom event name for initiating checkout
+                    ecommerce: {
+                        items: [{
+                            item_name: itemName,
+                            item_category: itemCategory,
+                            price: price,
+                            quantity: 1 // Assuming 1 item per click for simplicity
+                        }]
+                    }
+                });
+
+                // Redirect to payment successful page after a slight delay
+                setTimeout(() => {
+                    window.location.href = 'payment-successful.html';
+                }, 500); // Redirect after 0.5 seconds
             });
         });
     </script>
