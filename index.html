@@ -77,29 +77,6 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #555;
         }
-        /* Confirmation Message Styling */
-        .confirmation-message {
-            position: fixed;
-            top: 100px; /* Adjust as needed, below the header */
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #4CAF50; /* Green background */
-            color: white;
-            padding: 12px 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            z-index: 1000;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .confirmation-message.show {
-            opacity: 1;
-            visibility: visible;
-        }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
@@ -123,10 +100,6 @@
                     </button>
                     <button aria-label="My Account" class="text-gray-500 hover:text-indigo-600">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                    </button>
-                    <button aria-label="Shopping Cart" class="relative text-gray-500 hover:text-indigo-600">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
-                        <span class="absolute -top-2 -right-2 bg-indigo-600 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">0</span>
                     </button>
                 </div>
 
@@ -157,10 +130,6 @@
                     </button>
                     <button aria-label="My Account" class="text-gray-300 hover:text-indigo-400">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                    </button>
-                    <button aria-label="Shopping Cart" class="relative text-gray-300 hover:text-indigo-400">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
-                        <span class="absolute -top-2 -right-2 bg-indigo-400 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">0</span>
                     </button>
                 </div>
             </nav>
@@ -327,7 +296,6 @@
 
         // Add to Cart Confirmation Message (now integrated with Pay Now buttons)
         const payNowButtons = document.querySelectorAll('.pay-now');
-        let hideTimeout; // To store the timeout ID
 
         payNowButtons.forEach(button => {
             button.addEventListener('click', function(event) {
@@ -337,14 +305,7 @@
                 const itemCategory = this.dataset.itemCategory;
                 const price = parseFloat(this.dataset.price); // Convert to number
 
-                // Clear any existing timeout to prevent flickering if clicked rapidly
-                clearTimeout(hideTimeout);
-
                 // REMOVE confirmation message logic
-                // confirmationMessage.classList.add('show');
-                // hideTimeout = setTimeout(() => {
-                //     confirmationMessage.classList.remove('show');
-                // }, 3000);
 
                 // Push data to dataLayer
                 window.dataLayer = window.dataLayer || [];
