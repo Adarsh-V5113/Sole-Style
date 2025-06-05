@@ -167,11 +167,6 @@
         </div>
     </header>
 
-    <div id="add-to-cart-confirmation" class="confirmation-message">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-        <span>Item added to cart!</span>
-    </div>
-
     <section id="new-arrivals" class="py-16 sm:py-24 bg-white min-h-[calc(100vh-80px)] flex flex-col justify-center">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-4xl sm:text-5xl font-bold text-center mb-6 text-gray-900">Fresh Off The Press</h2>
@@ -332,7 +327,6 @@
 
         // Add to Cart Confirmation Message (now integrated with Pay Now buttons)
         const payNowButtons = document.querySelectorAll('.pay-now');
-        const confirmationMessage = document.getElementById('add-to-cart-confirmation');
         let hideTimeout; // To store the timeout ID
 
         payNowButtons.forEach(button => {
@@ -346,12 +340,11 @@
                 // Clear any existing timeout to prevent flickering if clicked rapidly
                 clearTimeout(hideTimeout);
 
-                confirmationMessage.classList.add('show');
-
-                // Hide the message after 3 seconds
-                hideTimeout = setTimeout(() => {
-                    confirmationMessage.classList.remove('show');
-                }, 3000); // 3000 milliseconds = 3 seconds
+                // REMOVE confirmation message logic
+                // confirmationMessage.classList.add('show');
+                // hideTimeout = setTimeout(() => {
+                //     confirmationMessage.classList.remove('show');
+                // }, 3000);
 
                 // Push data to dataLayer
                 window.dataLayer = window.dataLayer || [];
